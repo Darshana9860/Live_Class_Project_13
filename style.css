@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+	--purple: #7030cc;
+	--blue: #1bbcef;
+	--pink: #a954d7;
+	--white: #ffffff;
+	--black: #000000;
+	--orange: #f28a3f;
+	--green: #7aca3a;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: var(--white);
+	font-family: "Montserrat", sans-serif;
+}
+
+/* header  */
+header {
+	background-color: var(--purple);
+	padding-bottom: 4rem;
+}
+
+/* nav  */
+nav {
+	display: flex;
+	flex-direction: row;
+	margin: 0 9rem;
+	padding: 4rem 0;
+}
+
+nav .lists {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	list-style: none;
+}
+
+nav .lists .list-item {
+	margin: 0 1.5rem;
+}
+
+nav .lists .list-item.active {
+	color: var(--blue);
+	border-bottom: 1px solid var(--pink);
+}
+
+nav  div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+nav div button {
+	background-color: var(--blue);
+	color: var(--white);
+	border: none;
+	padding: 0.75rem 2rem;
+	font-weight: 600;
+	margin-left: 1.5rem;
+}
+/* nav */
+
+.head-con {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 9rem;
+}
+
+.head-con > div:first-child {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 9rem;
+}
+
+.head-con h1 {
+	font-size: 4rem;
+	margin-bottom: 2.5rem;
+}
+
+.head-con > div:first-child p {
+	font-size: 1.2rem;
+}
+
+.head-con > div > img {
+	width: 43vw;
+}
+
+/* section 1  */
+
+.sec1 {
+	margin: 4rem 9rem;
+	color: var(--black);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.sec1 > div > img {
+	width: 43vw;
+}
+
+.sec1 .sec1-con {
+	margin-left: 5rem;
+}
+
+.sec1 > div > h2 {
+	font-size: 3rem;
+}
+
+.sec1-content {
+	display: flex;
+	flex-direction: row;
+	margin-top: 2.5rem;
+}
+
+.icon1 i {
+	color: var(--orange);
+	margin-right: 1.5rem;
+}
+.icon2 i {
+	color: var(--green);
+	margin-right: 1.5rem;
+}
+.icon3 i {
+	color: var(--blue);
+	margin-right: 1.5rem;
+}
+
+/* section 2  */
+.sec2 {
+	margin: 0 9rem;
+	color: var(--black);
+	margin-bottom: 4rem;
+}
+
+.sec2 > h2 {
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 5rem;
+}
+
+.sec2-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 4rem 0.25rem 0.25rem;
+
+	border-radius: 10px;
+	box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.sec2-card div:last-child {
+	padding: 2rem 5rem;
+	border-radius: 10px;
+	margin-top: 2rem;
+}
+
+.sec2-card .active {
+	background-color:var(--purple);
+	color: var(--white);
+}
+
+.sec2-card div p {
+	margin-top: 1rem;
+	font-size: 0.9rem;
+}
+
+.sec2-img1 {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #faeaeb;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.sec2-img2 {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #fbf0ee;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.sec2-img3 {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #e9f4f6;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.sec2-img4 {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #f2e7f5;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.sec2-img2 img {
+	fill: #f28a3f;
+}
+
+@media screen and (max-width:768px) {
+	.head-con {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 2rem;
+	}
+	.head-con h1{
+		font-size: 2rem;
+	}
+	nav {
+		display: flex;
+		
+		flex-wrap: wrap;
+		margin: 1rem 2rem;
+		/* padding: 4rem 0; */
+	}
+	nav .lists .list-item {
+		margin: 0 0.5rem;
+	}
+	.head-con > div > img {
+		margin:10px 20%;
+	}
+	.sec1 {
+		margin: 1rem 1rem;
+	}
+	.sec1 > div > h2{
+		font-size: 40px;
+	}
+	.sec2{
+		margin: 0 1rem;
+	}
+	.cards{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.btn{
+		margin: 10px 50%;
+	}
+}
